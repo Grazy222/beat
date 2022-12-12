@@ -5,39 +5,27 @@
     font-family: "Montserrat";
 }
 
-
-nav{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 14vh;
-
-}
 .logo{
-    width: 17vw;
-    height: 6vh;
+    width: 12vh;
+    height: 9vh;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    
 
 
 }
-.imgLogo{
-    width: 6vw;
-    height: 8vh;
-    margin-left: 2em;
-}
-
-
-.navList{
+.menu{ 
+    color: #9767A9;
     list-style: none;
     display: flex;
-    justify-content: center;
-
-}
-.navList li{ 
+    gap: 4.5rem;
     
-    letter-spacing: 1px;
-    margin-left: 1em;
-    color: #9767A9;
-    text-decoration: none;
+    
     
 }
 li:hover{
@@ -47,44 +35,38 @@ li:hover{
     font-family: 'Monteserrat';
     transition: 0,3s;
 }
-ul{
-    height: 1vw;
+.divSociais{
     
+    color: #9767A9;
+}
+div.line1{
+    position: relative;
+    
+   
 }
 
-.mobileMenu{
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    
-}
-.mobileMenu div{
-    width: 27px;
-    height: 2px;
+.mobileMenu {
+    width: 25px;
+    height: 3px;
     margin: 4px;
-    background: black;
-    
+    background-color: #9767A9;
+    margin-left: 7vh;
 }
 .caixaBusca {
     display: flex;
+    width: 42vh;
+    height: 3vw;
     
 }
+
 .search-txt{
     width: 36vh;
     height: 5vh;
     border: #9767A9 solid;
-    border-radius: 10px;
-    
-
+    border-radius: 15px;
 }
-.lupa{
-    width: 3vh;
-    height: 5vh;
-    position: relative;
-    right: 2vw;
-}
-.divSociais a {
-    color: #9767A9;
+.divSociais{
+    display: flex;
     
 }
 
@@ -96,10 +78,8 @@ ul{
     color: #ffff;
 }
 .cabeludo{
-    width: 100vw;
-    height: 87vh;
-    position: relative;
-    font-family: 'Playfair';
+    width: 100vh;
+    height: 57vh;
 }
 
 .dicas{
@@ -183,7 +163,7 @@ margin-left: 2em;
 .refP{
 
 }
-text3{
+.text3{
 
 }
 .tituloH{
@@ -230,30 +210,61 @@ footer{
 
 }
 
-@meda(min-width:1501px) and (max-width:1800){ 
-    header{
-        heigth:50vh;
-        display:flex;
-        justify-content:space-between;
-    }
-    .navList{
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 50vw;
-        height: 92vh;
-    }
-}
+
 @media(min-width:201px) and (max-width:500px){
     header{
-        height: 50vh;
+        width: 80vh;
+        height: 10vh;
         display: flex;
         flex-direction: column;
-
     }
-    form{
-        border: #9767A9 solid;
-        width: 16vw;
-        height: 8vh;
+    .logo{
+        width: 13vh;
+        height: 231h;
+        margin-left: 18%;
+        margin-bottom: 2em;
     }
+    .cabeludo{
+        width: 80vh;
+        height: 45vh;
+    }
+    .nav{
+        
+        display: none;
+        
+    
+    }
+    .menu{ 
+        display: block;
+        position: absolute;
+        top:4.6rem;
+        left: 0;
+        background: #9767a9;
+        text-align: center;
+        
+        
+        
+    }
+    .mobileMenu{
+        display:none;
+        align-items:center;
+        gap: 0.5rem;
+        color:#9767a9;
+        cursor:pointer;
+    }
+    li:hover{
+       
+        color: #9767A9;
+        border: solid blue;
+        font-family: 'Monteserrat';
+        transition: 0,3s;
+    }
+    ul{
+        height: 1vw;
+        
+    }
+    .secMain{
+        width: 155vh;
+    }
+    
 }
